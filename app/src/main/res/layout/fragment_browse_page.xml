@@ -1,0 +1,200 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".UserHome$BrowseFragment">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <!--This layout contains the categories view-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:visibility="gone"
+            android:id="@+id/filterLayout">
+
+
+            <!--Title for the categories view-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/FilterTitle"
+                android:text="@string/filterTitle"
+                android:textSize="32sp"
+                android:textIsSelectable="false"
+                android:singleLine="true"
+                android:gravity="center"/>
+
+            <!--The checkboxes below are connected to all possible societies in the current system-->
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category_1"
+                android:id="@+id/checkBox1"
+                android:layout_gravity="left"
+                android:gravity="center_vertical"
+                android:textSize="24sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category_2"
+                android:id="@+id/checkBox2"
+                android:layout_gravity="left"
+                android:gravity="center_vertical"
+                android:textSize="24sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category_3"
+                android:id="@+id/checkBox3"
+                android:layout_gravity="left"
+                android:gravity="center_vertical"
+                android:textSize="24sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category_4"
+                android:id="@+id/checkBox4"
+                android:layout_gravity="left"
+                android:gravity="center_vertical"
+                android:textSize="24sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category_5"
+                android:id="@+id/checkBox5"
+                android:layout_gravity="left"
+                android:gravity="center_vertical"
+                android:textSize="24sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category_6"
+                android:id="@+id/checkBox6"
+                android:layout_gravity="left"
+                android:gravity="center_vertical"
+                android:textSize="24sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category_7"
+                android:id="@+id/checkBox7"
+                android:layout_gravity="left"
+                android:gravity="center_vertical"
+                android:textSize="24sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category_8"
+                android:id="@+id/checkBox8"
+                android:layout_gravity="left"
+                android:gravity="center_vertical"
+                android:textSize="24sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"/>
+
+            <!--This button is used to hide the categories view and present the societies view-->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/filterComplete"
+                android:id="@+id/filterCompleteButton"
+                android:layout_gravity="center_horizontal"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <!--This layout contains the societies view-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/scrollingLayout">
+
+            <!--This view allows the list of societies to scroll-->
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/scrollView"
+                android:layout_gravity="right"/>
+
+
+
+
+            <!--This is the title of the societies page-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/societiesTitle"
+                android:id="@+id/Societies"
+                android:layout_gravity="center_horizontal"
+                android:textSize="24sp"
+                android:textIsSelectable="false"
+                android:singleLine="true"/>
+
+            <!--This is the list of societies-->
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/listView"
+                android:layout_gravity="center_horizontal"
+                android:visibility="visible"
+                android:clickable="true"/>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <!--This button allows the user to open the categories view-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/filterButton"
+        android:id="@+id/filterButton"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

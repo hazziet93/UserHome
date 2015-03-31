@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">User Home</string>
+
+
+    <string name="title_section1">News Feed</string>
+    <string name="title_section2">Discover</string>
+    <string name="title_section3">Browse</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="browse">Browse Page</string>
+    <string name="filterButton">Filter Menu</string>
+    <string name="filterComplete">Filter</string>
+    <string name="filterTitle">Categories</string>
+    <string name="societiesTitle">Societies</string>
+
+
+    <string name="category_1">Academic and Careers</string>
+    <string name="category_2">Faith and Culture</string>
+    <string name="category_3">Games and Activities</string>
+    <string name="category_4">Music and Media</string>
+    <string name="category_5">Performance</string>
+    <string name="category_6">Politics and Debating</string>
+    <string name="category_7">Sports</string>
+    <string name="category_8">Unique</string>
+</resources>
